@@ -43,7 +43,7 @@ class DrawList{
         }
 
 
-        /*  remove: Remove o elemento na posiÁ„o do index
+        /*  remove: Remove o elemento na posi√ß√£o do index
         entrada: inteiro que contem o index
         saida: retorna o novo tamanho do vetor
         */
@@ -54,10 +54,10 @@ class DrawList{
             return this->virtualSize;
         }
 
-        //Volta a pilha para a organizaÁ„o original
+        //Volta a pilha para a organiza√ß√£o original
         void reset(){
             if (this->removeDrawn) {
-                //declaraÁ„o das vari·veis locais
+                //declara√ß√£o das vari√°veis locais
                 Card<T> aux;
                 int passadas = this->data.getSize();
                 bool isSorted;
@@ -75,7 +75,7 @@ class DrawList{
                     passadas--;
                 } while (isSorted);
             }
-
+            this->virtualSize = this->data.getSize();
         }
 
         //Compra um item da pilha
@@ -84,7 +84,7 @@ class DrawList{
             if(!(bool)this->data.getSize())
                 return false;
             //Caso todas compradas 
-            if (!(bool)this->virtualSize)
+            if (this->virtualSize == 0)
                 this->reset();
             
             this->modifying = false;
