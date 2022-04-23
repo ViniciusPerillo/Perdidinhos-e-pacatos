@@ -96,3 +96,6 @@ ___
 Extraia o arquivo `.zip` e execute o jogo!
 Para mais informações sobre o jogo leia o README.txt
 
+## Instruções para Compilar
+
+Devido ao uso da biblioteca SFML para se compilar os arquivos é necessário que a bilioteca esteja devidamente instalada em seu ambiente.
