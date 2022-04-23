@@ -9,7 +9,7 @@ ___
 ### Ana Ellen Deodato Pereira da Silva 
 > Arte e Interface
 
-[![Gmail Badge](https://img.shields.io/badge/--c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:vinicius.perillo25@gmail.com)](mailto:vinicius.perillo25@gmail.com)
+[![Gmail Badge](https://img.shields.io/badge/-anaellen.uba@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:anaellen.uba@gmail.com)](mailto:anaellen.uba@gmail.com)
 
 ### Lucas Maciel Balieiro 
 > Jogabilidade e Fases
@@ -37,6 +37,8 @@ ___
 
 O projeto pode ser dividido em 3 grandes unidades de software: Dados, Interface e Estrutura de Dados, que são inicializadas em `fase.h` e gerenciadas pelo motor `Game.h`.
 
+![Unidades de Software](https://user-images.githubusercontent.com/76188994/164943225-2593e8cc-b14d-4ae4-bc22-a4bae79f457a.png)
+
 ### Dados
 Os dados são um conjunto de classes que fornece os dados de funcionamento do jogo, eles são completamente desconectados da interface e foram planejados a fim de proporcionar uma boa modularização.
 
@@ -46,7 +48,9 @@ Para entender essas classes, é necessário entender como o jogo funciona. Prime
 
 - `Linkers.h`: ou conectores, são regiões no ambiente que realizam a troca de ambiente, eles interligam os ambientes no grafo que representa a casa. Dessa forma podemos construir qualquer disposição de residência apenas mudando os ambientes que os apontam. 
 
-As quatros classes podem compor um grupo que forma os ambientes. Nossa fase se dispõe como o grafo a seguir: 
+As quatros classes podem compor um grupo que forma os ambientes. Nossa fase se dispõe como o grafo a seguir:
+
+![Grafo da Fase](https://user-images.githubusercontent.com/76188994/164943227-731ce7ae-e357-4719-91d2-3ca5b55faee5.png)
 
 *Pontas são passagem direta e bases são portas*
 
