@@ -61,6 +61,30 @@ public:
         return !(*this == card);
     }
 
+    bool operator==(int index) {
+        return this->index == index;
+    }
+
+    bool operator<(int index) {
+        return this->index < index;
+    }
+
+    bool operator>(int index) {
+        return !(*this == index && *this < index);
+    }
+
+    bool operator>=(int index) {
+        return !(*this < index);
+    }
+
+    bool operator<=(int index) {
+        return *this == index && *this < index;
+    }
+
+    bool operator!=(int index) {
+        return !(*this == index);
+    }
+
 private:
     //atributos
     T info;
